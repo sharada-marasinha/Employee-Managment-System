@@ -31,5 +31,10 @@ public class EmployeeController {
         service.deleteEmployeeById(id);
         return "Deleted";
     }
+
+    @PutMapping("/update-employee")
+    public void updateEmployee(@RequestBody Employee employee){
+        service.updateEmployee(employee);
+    }
 }
 
