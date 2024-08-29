@@ -11,16 +11,11 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @Entity
-@Table(name = "employee")
-public class EmployeeEntity {
+@Table(name = "role")
+public class RoleEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String departmentId;
-    private String roleId;
+    private String name;
+    private String description;
 }
-
-
