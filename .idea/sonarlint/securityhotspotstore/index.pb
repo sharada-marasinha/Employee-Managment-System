@@ -55,3 +55,15 @@ d
 4src/main/java/org/emp/repository/RoleRepository.java,8\9\8953d867112583f21603c3da86c868a5c5ce7265
 X
 (src/main/java/org/emp/config/Config.java,0\b\0bb3bfd381a4c9d2ab23d19c29f4d428594dbec2
+j
+:src/main/java/org/emp/controller/DepartmentController.java,6\3\63da1e895ffd0007b2ad0d36eb40b6daed417296
+Y
+)src/main/java/org/emp/dto/Department.java,3\b\3b2f221f055d5cfd1c228ea28aee18978e746ac4
+j
+:src/main/java/org/emp/repository/DepartmentRepository.java,3\2\326e802eebb6d34d718bca61b6d5e0b296701288
+m
+=src/main/java/org/emp/service/impl/DepartmentServiceImpl.java,3\2\32fae599b1ab1d94c9f2d2efa0d5a7bc0e0c4df0
+d
+4src/main/java/org/emp/service/DepartmentService.java,e\0\e0b944c37999a63ee67244b72db8d53742862bef
+b
+2src/main/java/org/emp/entity/DepartmentEntity.java,2\7\27ec035153f9546b1ba172d5b9d8bb0f74d3f32d

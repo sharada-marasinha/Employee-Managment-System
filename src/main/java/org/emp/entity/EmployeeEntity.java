@@ -20,7 +20,26 @@ public class EmployeeEntity {
     private String lastName;
     private String email;
     private String departmentId;
-    private String roleId;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "role_id", referencedColumnName = "id")
+    private RoleEntity role;
+
+
+    /*
+        {
+            "firstName":"Saman",
+            "lastName":"Kumara",
+            "email":"samankumara@gmail.com",
+            "departmentId":"005",
+            "role":{
+                "description":"Hr",
+                "name":"manager"
+            }
+
+        }
+     */
+
 }
 
 
