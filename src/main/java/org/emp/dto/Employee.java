@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -14,6 +16,6 @@ public class Employee {
     private String firstName;
     private String lastName;
     private String email;
-    private String departmentId;
     private Role role;
+    private List<Department> departmentList;
 }

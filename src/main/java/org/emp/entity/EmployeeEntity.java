@@ -5,6 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -19,27 +22,12 @@ public class EmployeeEntity {
     private String firstName;
     private String lastName;
     private String email;
-    private String departmentId;
+
+    @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JsonManagedReference
+    private List<DepartmentEntity> departmentList;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "role_id", referencedColumnName = "id")
     private RoleEntity role;
-
-
-    /*
-        {
-            "firstName":"Saman",
-            "lastName":"Kumara",
-            "email":"samankumara@gmail.com",
-            "departmentId":"005",
-            "role":{
-                "description":"Hr",
-                "name":"manager"
-            }
-
-        }
-     */
-
 }
-
-
