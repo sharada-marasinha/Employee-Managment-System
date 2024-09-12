@@ -23,7 +23,6 @@ public class SecurityConfig {
                 .formLogin(Customizer.withDefaults())
                 .httpBasic(Customizer.withDefaults())
                 .sessionManagement(session-> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)).build();
-
     }
     @Bean
     public AuthenticationProvider authenticationProvider(){
@@ -31,6 +30,5 @@ public class SecurityConfig {
         provider.setPasswordEncoder(NoOpPasswordEncoder.getInstance());
         provider.setUserDetailsService(userDetailsService);
         return provider;
-
     }
 }

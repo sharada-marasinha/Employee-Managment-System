@@ -69,8 +69,6 @@ b
 2src/main/java/org/emp/entity/DepartmentEntity.java,2\7\27ec035153f9546b1ba172d5b9d8bb0f74d3f32d
 `
 0src/main/java/org/emp/config/SecurityConfig.java,9\b\9be2d31eb00cd173e37fee5e14701320898ac716
-W
-'src/main/java/org/emp/package-info.java,a\f\af15b8c797317e453f293f60d2a0b119b5e998c0
 ^
 .src/main/java/org/emp/model/UserPrinciple.java,8\7\87f75cbd2dbcd320416c9d74ae1ce67b937e6259
 S

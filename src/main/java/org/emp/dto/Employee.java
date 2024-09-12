@@ -12,7 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @ToString
 public class Employee {
-    private Long id;
+    private String id;
     private String firstName;
     private String lastName;
     private String email;
